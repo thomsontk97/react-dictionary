@@ -1,0 +1,108 @@
+*{
+  margin:0px;
+}
+
+body{
+  background-color: lightgrey;
+}
+
+.nav{
+  background-color: black;
+  color:antiquewhite;
+  font-size: 24px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px;
+  height:30px;
+}
+
+.search-box{
+  /* border:1px solid red; */
+
+  display: flex;
+  flex-flow: row wrap;
+
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 25px;
+  padding: 10px;
+}
+
+input,button{
+  outline:none;
+  border:0;
+  padding: 5px 10px;
+  
+}
+
+input{
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  width:220px;
+}
+
+button{
+  background-color: black;
+  color:antiquewhite;
+
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.results{
+  margin:1rem;
+  background-color: white;
+  color:black;
+  padding: 10px;
+}
+
+.nav a{
+  text-decoration: none;
+  color: rgb(250, 250, 250);
+}
+
+.nav .active{
+  color:rgb(212, 198, 179)
+}
+
+.links{
+  /* border:1px solid white;  */
+  width:175px;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/*  */
+/* Loader.css */
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 999; /* Ensure it appears above other content */
+}
+
+.spinner {
+  /* Add styles for your loading spinner here */
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
